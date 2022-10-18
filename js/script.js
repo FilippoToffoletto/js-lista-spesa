@@ -8,10 +8,19 @@ Consigli:
 - Ricordiamoci di incrementare il contatore, o comunque di inserire una condizione di uscita, all’interno ciclo while   */
 
 const food = [
-    'arance',
-    'meloni',
-    'pomodori',
-    'olive',
-    'succo',
-    'latte',
+    'Arance',
+    'Meloni',
+    'Pomodori',
+    'Olive',
+    'Succo',
+    'Latte',
 ];
+
+const list =  document.querySelector('ul');
+let foodList = '';
+
+for(i = 0; i < food.length; i++){
+    foodList = `<li>${food[i]}</li>`;
+
+    list.innerHTML += foodList;
+}
